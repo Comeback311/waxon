@@ -1,0 +1,29 @@
+.link {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+
+    font: 14px 'Raleway', Helvetica, Arial;
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: .125s color ease-in;
+}
+
+.link:hover,
+.link_active {
+    color: #c7b299;
+}
+
+.link_icon:hover svg {
+    fill: #c7b299;
+}
+
+.link_icon svg {
+    width: 20px;
+    fill: white;
+
+    transition: .1s fill ease-in;
+}

@@ -1,0 +1,249 @@
+.button {
+  display: inline-block; }
+
+.button_size_big {
+  padding: 18px 38px; }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"), local("Raleway-Regular"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISottDfA.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBdqczVs.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBdqczVs.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPBdqczVs.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIouWqZPBdqczVs.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"), local("Raleway-Regular"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISottDfA.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBdqczVs.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBdqczVs.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPBdqczVs.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIouWqZPBdqczVs.ttf) format("truetype"); }
+
+.header {
+  height: 96px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  background: none;
+  z-index: 10; }
+
+.header__content {
+  height: 100%;
+  max-width: 1180px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between; }
+
+.header__logo {
+  display: flex;
+  align-items: center; }
+
+html {
+  height: 100%; }
+
+.landing {
+  background-image: url("./../assets/images/mountain.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  transition: transform .1s ease-in;
+  will-change: transform;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.landing__content {
+  text-align: center;
+  padding-top: 20px; }
+
+.landing__title {
+  color: #fff;
+  font-family: 'Raleway', Helvetica, Arial; }
+
+.landing__title_medium {
+  font-size: 34px;
+  letter-spacing: 2px;
+  line-height: 46px; }
+
+.landing__title_big {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 65px; }
+
+.landing__title_small {
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 458px;
+  margin: 0 auto;
+  margin-top: 10px;
+  letter-spacing: .3px; }
+
+.landing__button {
+  background: #998675;
+  color: #fff;
+  font: 14px 'Raleway', Helvetica, Arial;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  font-weight: 500;
+  line-height: 14px;
+  margin-top: 40px; }
+
+.landing__bullets {
+  right: 25px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.landing__bullets-item {
+  width: 15px;
+  height: 15px;
+  margin: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2); }
+
+.landing__bullets-item_active {
+  position: relative;
+  box-shadow: 0 0 0 2px #FFF; }
+
+.landing__bullets-item_active::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(0.4);
+  background: #fff; }
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font: 14px 'Raleway', Helvetica, Arial;
+  color: #fff;
+  cursor: pointer;
+  transition: .125s color ease-in; }
+
+.link:hover,
+.link_active {
+  color: #c7b299; }
+
+.link_icon:hover svg {
+  fill: #c7b299; }
+
+.link_icon svg {
+  width: 20px;
+  fill: white;
+  transition: .1s fill ease-in; }
+
+.logo {
+  transform: scale(0.92);
+  width: 171px;
+  height: 56px;
+  background: #fff;
+  background: url("./../assets/images/logo.png"); }
+
+.menu {
+  display: flex; }
+
+.menu__item {
+  margin-right: 16px;
+  margin-left: 16px; }
+
+.menu__item_icon_cart {
+  margin-right: 0; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
