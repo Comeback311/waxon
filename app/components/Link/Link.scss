@@ -1,4 +1,4 @@
-.link {
+ .link {
     display: flex;
     align-items: center;
 
@@ -10,20 +10,20 @@
     cursor: pointer;
 
     transition: .125s color ease-in;
-}
 
-.link:hover,
-.link_active {
-    color: #c7b299;
-}
+    &:hover,
+    &_active {
+        color: #c7b299;
+    }
 
-.link_icon:hover svg {
-    fill: #c7b299;
-}
+    &_icon:hover svg {
+        fill: #c7b299;
+    }
 
-.link_icon svg {
-    width: 20px;
-    fill: white;
-
-    transition: .1s fill ease-in;
+    &_icon svg {
+        width: 20px;
+        fill: white;
+    
+        transition: .1s fill ease-in;
+    }
 }

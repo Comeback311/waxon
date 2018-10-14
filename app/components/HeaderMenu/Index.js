@@ -4,7 +4,7 @@ import HeaderMenuItem from '../HeaderMenuItem';
 class HeaderMenu extends Component {
     render() {
         return(
-            <div className='header__menu menu'>
+            <div className='header__menu'>
                 <ul className='menu'>
                     <HeaderMenuItem title='Home' isActive={true} />
                     <HeaderMenuItem title='Pages' />

@@ -1,7 +1,7 @@
 .button {
     display: inline-block;
-}
 
-.button_size_big {
-    padding: 18px 38px;
+    &_size_big {
+        padding: 18px 38px;
+    }
 }

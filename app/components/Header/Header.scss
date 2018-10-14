@@ -10,21 +10,25 @@
     background: none;
 
     z-index: 10;
-}
 
-.header__content {
-    height: 100%;
-    max-width: 1180px;
-    width: 100%;
-    padding: 0 20px;
+    &__menu {
+        display: flex;
+    }
 
-    box-sizing: border-box;
+    &__content {
+        height: 100%;
+        max-width: 1180px;
+        width: 100%;
+        padding: 0 20px;
+    
+        box-sizing: border-box;
+    
+        display: flex;
+        justify-content: space-between;
+    }
 
-    display: flex;
-    justify-content: space-between;
-}
-
-.header__logo {
-    display: flex;
-    align-items: center;
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
 }
