@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
- 
+
 import './Index.scss';
 
 class Landing extends Component {
-    render() {
-        return(
+    render() {
+        return(
             <div className='landing'>
                 <div className='landing__content'>
                     <div className='landing__title landing__title_medium'>Unique and Modern Design</div>
@@ -19,7 +19,7 @@ class Landing extends Component {
                 </div>
             </div>
         );
-    }
+    }
 }
 
 module.exports = Landing;

@@ -4,9 +4,9 @@ import SvgIcon from '../SvgIcon';
 import './Index.scss';
 
 class HeaderMenuItem extends Component {
-    constructor(props) {
-        super(props);
-    }
+    constructor(props) {
+        super(props);
+    }
 
     getClassName() {
         let className = 'link';
@@ -19,11 +19,12 @@ class HeaderMenuItem extends Component {
     }
 
     icon() {
-        return this.props.iconName ? (<SvgIcon iconName={this.props.iconName} />) : ''
+        return this.props.iconName ?
+            (<SvgIcon iconName={this.props.iconName} />) : '';
     }
 
-    render() {
-        return(
+    render() {
+        return(
             <li className="menu__item">
                 <a className={this.getClassName()}>
                     {this.props.title}
@@ -31,7 +32,7 @@ class HeaderMenuItem extends Component {
                 </a>
             </li>
         );
-    }
+    }
 }
 
 module.exports = HeaderMenuItem;

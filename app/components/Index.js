@@ -3,16 +3,16 @@ import Header from './Header';
 import Landing from './Landing';
 
 import './Index.scss';
- 
+
 class App extends Component {
-    render() {
+    render() {
         const styles = {
             backgroundColor: 'lightblue', 
             height: '100vh', 
             width: '100%'
         };
 
-        return(
+        return(
             <div className='content'>
                 <Header />
                 <Landing />
@@ -23,7 +23,7 @@ class App extends Component {
                 </div>
             </div>
         );
-    }
+    }
 }
- 
+
 module.exports = App;

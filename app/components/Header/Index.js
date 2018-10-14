@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import Logo from '../Logo';
 import HeaderMenu from '../HeaderMenu/Index';
 
-import './Header.scss'; 
+import './Header.scss';
 
 class Header extends Component {
-    render() {
-        return(
+    render() {
+        return(
             <div className='header'>
                 <div className='header__content'>
                     <Logo />
@@ -14,7 +14,7 @@ class Header extends Component {
                 </div>
             </div>
         );
-    }
+    }
 }
 
 module.exports = Header;

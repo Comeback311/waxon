@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import HeaderMenuItem from '../HeaderMenuItem';
 
 class HeaderMenu extends Component {
-    render() {
-        return(
+    render() {
+        return(
             <div className='header__menu'>
                 <ul className='menu'>
                     <HeaderMenuItem title='Home' isActive={true} />
@@ -17,7 +17,7 @@ class HeaderMenu extends Component {
                 </ul>
             </div>
         );
-    }
+    }
 }
 
 module.exports = HeaderMenu;
