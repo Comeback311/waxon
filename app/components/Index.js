@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Landing from './Landing';
+
+import './Index.scss';
  
 class App extends Component {
     render() {

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import SvgIcon from '../SvgIcon';
+
+import './Index.scss';
 
 class HeaderMenuItem extends Component {
     constructor(props) {
