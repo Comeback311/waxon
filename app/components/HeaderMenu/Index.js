@@ -1,11 +1,7 @@
-const React = require('react');
-const HeaderMenuItem = require('./../HeaderMenuItem/HeaderMenuItem.jsx');
+import React, { Component } from 'react';
+import HeaderMenuItem from '../HeaderMenuItem';
 
-class HeaderMenu extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-               
+class HeaderMenu extends Component {
     render() {
         return(
             <div className='header__menu menu'>

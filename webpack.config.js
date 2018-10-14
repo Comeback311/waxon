@@ -8,8 +8,8 @@ const output = {
 
 module.exports = {
     entry: [
-        './app/app.jsx',
-        './app/styles.scss'
+        './app/App',
+        // './app/styles.scss'
     ],
     output: {
         path: path.resolve(__dirname, 'public'),
@@ -52,10 +52,10 @@ module.exports = {
             use: [ 'style-loader', 'css-loader' ]
         }]
     },
-    // plugins: [
-    //     new ExtractTextPlugin({
-    //         filename: './../public/' + output.css,
-    //         allChunks: true,
-    //     })
-    // ]
+    plugins: [
+        new ExtractTextPlugin({
+            filename: './../public/' + output.css,
+            allChunks: true,
+        })
+    ]
 }

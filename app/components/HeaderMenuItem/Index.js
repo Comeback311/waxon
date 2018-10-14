@@ -1,7 +1,7 @@
-const React = require('react');
-const SvgIcon = require('./../SvgIcon/SvgIcon.jsx');
+import React from 'react';
+import SvgIcon from '../SvgIcon';
 
-class HeaderMenuItem extends React.Component {
+class HeaderMenuItem extends Component {
     constructor(props) {
         super(props);
     }

@@ -1,10 +1,8 @@
-const React = require('react');
+import React, { Component } from 'react';
+
+import './Logo.scss';
  
-class Logo extends React.Component {
-    constructor(props){
-        super(props);
-    }
-               
+class Logo extends Component {
     render() {
         return(
             <div className='header__logo'>

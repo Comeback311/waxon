@@ -1,10 +1,8 @@
-const React = require('react');
+import React, { Component } from 'react';
  
-class Landing extends React.Component {
-    constructor(props){
-        super(props);
-    }
-               
+import './Landing.scss';
+
+class Landing extends Component {
     render() {
         return(
             <div className='landing'>

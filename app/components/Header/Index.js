@@ -1,12 +1,10 @@
-const React = require('react');
-const Logo = require('./../Logo/Logo.jsx');
-const HeaderMenu = require('./../HeaderMenu/HeaderMenu.jsx');
- 
-class Header extends React.Component {
-    constructor(props){
-        super(props);
-    }
-               
+import React, { Component } from 'react';
+import Logo from '../Logo';
+import HeaderMenu from '../HeaderMenu/Index';
+
+import './Header.scss'; 
+
+class Header extends Component {
     render() {
         return(
             <div className='header'>
