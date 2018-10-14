@@ -25,10 +25,14 @@ module.exports = {
         }, {
             test: /\.jsx?$/,
             exclude: /(node_modules)/,
-            loader: 'babel-loader',
-            options: {
-                presets: ['env', 'react']
-            }
+            use: [{
+                loader: 'babel-loader',
+                options: {
+                    presets: ['env', 'react']
+                }
+            }, {
+                loader: 'eslint-loader'
+            }]
         }, {
             test: /\.(sass|scss)$/,
             include: path.resolve(__dirname, 'app'),
