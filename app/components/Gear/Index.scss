@@ -1,0 +1,35 @@
+$transition: .25s;
+
+.gear {
+    height: 48px;
+    width: 48px;
+    box-sizing: border-box;
+
+    position: fixed;
+    left: 0;
+    top: 215px;
+
+    border: 1px solid #ECECEC;
+    background: rgba(255, 255, 255, .96);
+
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+
+    transition: $transition background;
+
+    &:hover {
+        background: rgba(255, 255, 255, .85);
+
+        svg {
+            fill: rgb(32, 32, 32);
+        }
+    }
+
+    svg {
+        height: 100%;
+        width: 100%;
+
+        fill: rgb(52, 52, 52);
+        transition: $transition fill;
+    }
+}

@@ -2,12 +2,6 @@
     background-image: url('./../assets/images/mountain.jpg');
     background-size: cover;
 
-    height: 100vh;
-    width: 100%;
-
-    transition: transform .1s ease-in;
-    will-change: transform;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +13,6 @@
 
     &__title {
         color: #fff;
-        font-family: 'Raleway', Helvetica, Arial;
 
         &_medium {
             font-size: 34px;
@@ -91,5 +84,56 @@
                 background: #fff;
             }
         }
+    }
+
+    &__scroller {
+        height: 56px;
+        width: 34px;
+        border: 2px solid rgba(255, 255, 255, 0.7);
+        border-radius: 24px;
+
+        position: absolute;
+        bottom: 50px;
+        left: calc(50% - 17px);
+
+        background: transparent;
+        box-sizing: border-box;
+
+        &-circle {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+
+            position: absolute;
+            left: calc(50% - 4px);
+            transform: translateY(8px);
+
+            background: #fff;
+            opacity: 0;
+
+            animation: scrolling 2s infinite linear;
+            animation-delay: 1s;
+        }
+
+        @keyframes scrolling {
+            from {
+                transform: translateY(8px);
+                opacity: .5;
+            }
+
+            35% {
+                transform: translateY(8px);
+                opacity: .8;
+            }
+
+            50% {
+                opacity: .5;
+            }
+
+            65% {
+                transform: translateY(22px);
+                opacity: 0;
+            }
+        }        
     }
 }

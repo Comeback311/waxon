@@ -5,7 +5,7 @@ import './Index.scss';
 class Landing extends Component {
     render() {
         return(
-            <div className='landing'>
+            <div className='landing page'>
                 <div className='landing__content'>
                     <div className='landing__title landing__title_medium'>Unique and Modern Design</div>
                     <div className='landing__title landing__title_big'>Welcome to Waxom</div>
@@ -16,6 +16,9 @@ class Landing extends Component {
                     <div className="landing__bullet-item"></div>
                     <div className="landing__bullet-item landing__bullet-item_active"></div>
                     <div className="landing__bullet-item"></div>
+                </div>
+                <div className='landing__scroller'>
+                    <div className='landing__scroller-circle'></div>
                 </div>
             </div>
         );
