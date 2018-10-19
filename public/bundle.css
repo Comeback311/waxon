@@ -52,10 +52,6 @@
 .landing {
   background-image: url("./../assets/images/mountain.jpg");
   background-size: cover;
-  height: 100vh;
-  width: 100%;
-  transition: transform .1s ease-in;
-  will-change: transform;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -63,8 +59,7 @@
     text-align: center;
     padding-top: 20px; }
   .landing__title {
-    color: #fff;
-    font-family: 'Raleway', Helvetica, Arial; }
+    color: #fff; }
     .landing__title_medium {
       font-size: 34px;
       letter-spacing: 2px;
@@ -112,11 +107,97 @@
         border-radius: 50%;
         transform: scale(0.4);
         background: #fff; }
+  .landing__scroller {
+    height: 56px;
+    width: 34px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 24px;
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 17px);
+    background: transparent;
+    box-sizing: border-box; }
+    .landing__scroller-circle {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      position: absolute;
+      left: calc(50% - 4px);
+      transform: translateY(8px);
+      background: #fff;
+      opacity: 0;
+      animation: scrolling 2s infinite linear;
+      animation-delay: 1s; }
+
+@keyframes scrolling {
+  from {
+    transform: translateY(8px);
+    opacity: .5; }
+  35% {
+    transform: translateY(8px);
+    opacity: .8; }
+  50% {
+    opacity: .5; }
+  65% {
+    transform: translateY(22px);
+    opacity: 0; } }
 
 .button {
   display: inline-block; }
   .button_size_big {
     padding: 18px 38px; }
+.gear {
+  height: 48px;
+  width: 48px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 215px;
+  border: 1px solid #ECECEC;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: 0.25s background; }
+  .gear:hover {
+    background: rgba(255, 255, 255, 0.85); }
+    .gear:hover svg {
+      fill: #202020; }
+  .gear svg {
+    height: 100%;
+    width: 100%;
+    fill: #343434;
+    transition: 0.25s fill; }
+.characteristics {
+  background: #fff; }
+  .characteristics__content {
+    max-width: 1140px;
+    padding: 100px 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; }
+  .characteristics__thumb {
+    width: 285px;
+    margin: 0 20px; }
+    .characteristics__thumb:first-child {
+      margin-left: 0; }
+    .characteristics__thumb:last-child {
+      margin-right: 0; }
+  .characteristics__title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #363636;
+    text-align: center;
+    margin-top: 20px; }
+  .characteristics__text {
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 1.5em;
+    color: #8c8c8c;
+    text-align: center; }
+  .characteristics__icon {
+    width: 100px;
+    height: 70px;
+    margin: 0 auto; }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -165,7 +246,8 @@ table {
   border-spacing: 0; }
 
 html {
-  height: 100%; }
+  height: 100%;
+  font-family: 'Raleway', Helvetica, Arial; }
 
 @font-face {
   font-family: 'Raleway';
@@ -196,3 +278,7 @@ html {
   font-style: normal;
   font-weight: 800;
   src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIouWqZPBdqczVs.ttf) format("truetype"); }
+
+.page {
+  height: 100vh;
+  width: 100%; }
