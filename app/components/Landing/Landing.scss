@@ -2,6 +2,10 @@
     background-image: url('./../assets/images/mountain.jpg');
     background-size: cover;
 
+    min-height: 850px;
+
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,14 +41,7 @@
     }
 
     &__button {
-        background: rgb(153, 134, 117);
-        color: #fff;
-    
-        font: 14px 'Raleway', Helvetica, Arial;
-    
         letter-spacing: 1px;
-        border-radius: 4px;
-        font-weight: 500;
         line-height: 14px;
         margin-top: 40px;
     }
@@ -66,19 +63,32 @@
     
         background: rgba(255, 255, 255, .2);
 
+        cursor: pointer;
+
+        transition: .3s box-shadow, .3s background;
+
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+            transform: scale(1);
+
+            background: transparent;
+
+            transition: .3s transform, .3s background;
+        }
+
         &_active {
-            position: relative;
-            
             box-shadow: 0 0 0 2px #FFF;
+            background: transparent;
 
             &::after {
-                position: absolute;
-                content: '';
-            
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-            
                 transform: scale(.4);
             
                 background: #fff;

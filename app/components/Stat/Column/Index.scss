@@ -1,0 +1,17 @@
+.stat__column {
+    text-align: center;
+
+    position: relative;
+
+    &::after {
+        content: '';
+
+        margin: 25px auto 0;
+        height: 2px;
+
+        width: 30px;
+        background: #fff;
+
+        display: block;
+    }
+}

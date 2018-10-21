@@ -1,0 +1,27 @@
+.characteristics {
+    &__thumb {
+        width: 285px;
+        margin: 0 20px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .characteristics__icon {
+                color: #c7b299;
+                opacity: 1;
+            }
+
+            .characteristics__title {
+                color: #c7b299;
+            }
+        }
+    }
+}

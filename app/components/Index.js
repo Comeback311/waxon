@@ -1,19 +1,30 @@
 import React, { Component } from 'react';
-import { Header, Landing, Gear, Characteristics } from './Components.js';
+import {
+    Header, Landing, Gear, Characteristics, Ideas,
+    PromoStripe, Projects, Presentation, PosterMobile,
+    Stat, Posts, About, Footer, UpControl
+} from './Components.js';
 
 import './Index.scss';
 
 class App extends Component {
     render() {
-        const style = { height: '100vw', background: '#eee' };
-
         return(
             <div className='content'>
                 <Header />
                 <Landing />
                 <Gear />
                 <Characteristics />
-                <div style={style}></div>
+                <Ideas />
+                <PromoStripe />
+                <Projects />
+                <Presentation />
+                <PosterMobile />
+                <Stat />
+                <Posts />
+                <About />
+                <Footer />
+                <UpControl />
             </div>
         );
     }
