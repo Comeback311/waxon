@@ -1,0 +1,52 @@
+.projects {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    background: #fff;
+
+    &__content {
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    &__text {
+        max-width: 560px;
+
+        margin: 20px auto;
+        margin-bottom: 0;
+
+        line-height: 1.6em;
+        color: #8c8c8c;
+    }
+
+    &__buttons {
+        margin-top: 40px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        padding: 10px 20px;
+        font-size: 14px;
+        color: rgb(140, 140, 140);
+        border-radius: 2px;
+        border: 1px solid rgb(235, 235, 235);
+        margin: 0 5px;
+        cursor: pointer;
+        transition: .25s background, .25s color, .25s border-color;
+
+        &_active,
+        &:hover {
+            background: rgb(153, 134, 117);
+            color: #fff;
+            border-color: rgb(153, 134, 117);
+        }
+    }
+
+    &__cards {
+        margin-top: 40px;
+        text-align: center;
+    }
+}

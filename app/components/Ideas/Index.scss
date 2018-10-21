@@ -1,0 +1,35 @@
+.ideas {
+    background: #fbfaf8;
+    padding: 90px 70px 0 70px;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__templates {
+        margin-top: 60px;
+
+        display: flex;
+        justify-content: center;
+        
+        &-image {
+            width: 100%;
+            max-width: 1140px;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+    }
+
+    &__text {
+        line-height: 1.6em;
+        font-size: 16px;
+
+        margin: 20px auto;
+
+        max-width: 560px;
+
+        color: #8c8c8c;
+    }
+}

@@ -7,7 +7,7 @@ import './Header.scss';
 class Header extends Component {
     render() {
         return(
-            <div className='header'>
+            <div className='header header_hidden'>
                 <div className='header__content'>
                     <Logo />
                     <HeaderMenu />

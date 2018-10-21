@@ -1,0 +1,53 @@
+.promo-stripe {
+    background: #2f2928;
+
+    height: 174px;
+
+    display: flex;
+    align-items: center;
+
+    &__content {
+        max-width: 1140px;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        margin: 0 auto;
+    }
+
+    padding: 0 40px;
+
+    &__title {
+        font-size: 30px;
+        color: #fff;
+
+        &-header {
+            font-weight: bold;
+            color: #c7b299;
+            
+            display: inline;
+        }
+
+        &-text {
+            display: inline;
+
+            margin-left: 6px;
+        }
+    }
+
+    &__text {
+        font-size: 21px;
+        font-weight: 300;
+
+        color: #fff;
+        opacity: .4;
+
+        line-height: 1.75em;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+}

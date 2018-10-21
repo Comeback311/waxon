@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CharacteristicsThumb from './Thumb';
 
 import './Index.scss';
 
@@ -7,34 +8,26 @@ class Characteristics extends Component {
         return(
             <div className='characteristics'>
                 <div className='characteristics__content'>
-                    <div className='characteristics__thumb'>
-                        <div className='characteristics__icon'></div>
-                        <div className='characteristics__title'>Unique & Clean</div>
-                        <div className='characteristics__text'>
-                            Nam liber tempor cum soluta nobis eleifend option congue nihilita imperdiet doming id.
-                        </div>
-                    </div>
-                    <div className='characteristics__thumb'>
-                        <div className='characteristics__icon'></div>
-                        <div className='characteristics__title'>Responsive</div>
-                        <div className='characteristics__text'>
-                            Nam liber tempor cum soluta nobis eleifend option congue nihilita imperdiet doming id.
-                        </div>
-                    </div>
-                    <div className='characteristics__thumb'>
-                        <div className='characteristics__icon'></div>
-                        <div className='characteristics__title'>Great Usability</div>
-                        <div className='characteristics__text'>
-                            Nam liber tempor cum soluta nobis eleifend option congue nihilita imperdiet doming id.
-                        </div>
-                    </div>
-                    <div className='characteristics__thumb'>
-                        <div className='characteristics__icon'></div>
-                        <div className='characteristics__title'>Retina Ready</div>
-                        <div className='characteristics__text'>
-                            Nam liber tempor cum soluta nobis eleifend option congue nihilita imperdiet doming id.
-                        </div>
-                    </div>
+                    <CharacteristicsThumb
+                        icon='fas fa-briefcase' 
+                        title='Unique & Clean'
+                        text='Nam liber tempor cum soluta nobis eleifend option congue nihilita imperdiet doming id.'
+                    />
+                    <CharacteristicsThumb
+                        icon='fa fa-leaf' 
+                        title='Responsive'
+                        text='Nam liber tempor cum soluta nobis eleifend option congue nihilita imperdiet doming id.'
+                    />
+                    <CharacteristicsThumb
+                        icon='fa fa-rocket' 
+                        title='Great Usability'
+                        text='Nam liber tempor cum soluta nobis eleifend option congue nihilita imperdiet doming id.'
+                    />
+                    <CharacteristicsThumb
+                        icon='fa fa-eye' 
+                        title='Retina Ready'
+                        text='Nam liber tempor cum soluta nobis eleifend option congue nihilita imperdiet doming id.'
+                    />
                 </div>
             </div>
         );

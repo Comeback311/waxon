@@ -2,6 +2,10 @@
     background-image: url('./../assets/images/mountain.jpg');
     background-size: cover;
 
+    min-height: 850px;
+
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,14 +41,7 @@
     }
 
     &__button {
-        background: rgb(153, 134, 117);
-        color: #fff;
-    
-        font: 14px 'Raleway', Helvetica, Arial;
-    
         letter-spacing: 1px;
-        border-radius: 4px;
-        font-weight: 500;
         line-height: 14px;
         margin-top: 40px;
     }

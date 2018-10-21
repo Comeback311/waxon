@@ -31,4 +31,8 @@
         display: flex;
         align-items: center;
     }
+
+    &_hidden {
+        display: none;
+    }
 }
