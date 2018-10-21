@@ -9,10 +9,10 @@ class Footer extends Component {
                 <div className='footer__content'>
                     <div className='footer__copy'>
                         Copyright 2018 Waxom, Created by 
-                        <a className='footer__author' href='https://github.com/comeback311' target='_blank'>Avdeev Denis</a>
+                        <a className='footer__author' href='https://github.com/comeback311' target='_blank' rel="noopener noreferrer">Avdeev Denis</a>
                     </div>
                     <div className='footer__media'>
-                        <a href='https://vk.com/booomka' target='_blank' className='footer__media-item footer__media-item_active'>
+                        <a href='https://vk.com/booomka' target='_blank' rel="noopener noreferrer" className='footer__media-item footer__media-item_active'>
                             <i className='footer__media-item-icon fab fa-vk'></i>
                         </a>
                         <a className='footer__media-item'>
@@ -21,7 +21,7 @@ class Footer extends Component {
                         <a className='footer__media-item'>
                             <i className='footer__media-item-icon fab fa-twitter'></i>
                         </a>
-                        <a href='https://github.com/comeback311' target='_blank' className='footer__media-item footer__media-item_active'>
+                        <a href='https://github.com/comeback311' target='_blank' rel="noopener noreferrer" className='footer__media-item footer__media-item_active'>
                             <i className='footer__media-item-icon fab fa-github'></i>
                         </a>
                         <a className='footer__media-item'>

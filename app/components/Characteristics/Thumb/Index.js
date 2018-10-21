@@ -12,7 +12,7 @@ class CharacteristicsThumb extends Component {
 
         return icon && 
             <div className='characteristics__icon'>
-                <i className={ icon }></i>
+                <i className={ icon + ' characteristics__icon-content' }></i>
             </div>;
     }
 

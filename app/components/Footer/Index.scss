@@ -31,7 +31,8 @@
                 }
             }
 
-            &:visited {
+            &:visited,
+            &:link {
                 color: inherit;
             }
 

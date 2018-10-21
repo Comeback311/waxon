@@ -21,7 +21,7 @@ class Stat extends Component {
             faIcon: 'fa fa-thumbs-up',
             count: 871,
             name: 'Likes'
-        }]
+        }];
     }
 
     render() {
@@ -39,7 +39,7 @@ class Stat extends Component {
                                 faIcon = { faIcon }
                                 count = { count }
                                 name = { name }
-                            />
+                            />;
                         })
                     }
                 </div>

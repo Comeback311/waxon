@@ -89,7 +89,7 @@ class Posts extends Component {
                                     more = { more }
                                     horizontal = { horizontal }
                                     hovered = { hovered }
-                                />
+                                />;
                             })
                         }
                         <div className='posts__cards-arrows'>
