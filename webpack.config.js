@@ -1,5 +1,5 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const output = {
     css: 'bundle.css',
@@ -8,8 +8,7 @@ const output = {
 
 module.exports = {
     entry: [
-        './app/App',
-        // './app/styles.scss'
+        './app/App'
     ],
     output: {
         path: path.resolve(__dirname, 'public'),
@@ -36,8 +35,8 @@ module.exports = {
         }, {
             test: /\.(sass|scss)$/,
             include: path.resolve(__dirname, 'app'),
-            use: ExtractTextPlugin.extract({
-                use: [{
+            use: [
+                MiniCssExtractPlugin.loader, {
                     loader: 'css-loader',
                     options: {
                         sourceMap: true,
@@ -49,15 +48,15 @@ module.exports = {
                     options: {
                         sourceMap: true
                     }
-                }]
-            })
+                }
+            ]
         }, {
             test: /\.css$/,
             use: [ 'style-loader', 'css-loader' ]
         }]
     },
     plugins: [
-        new ExtractTextPlugin({
+        new MiniCssExtractPlugin({
             filename: './../public/' + output.css,
             allChunks: true,
         })
