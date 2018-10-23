@@ -4,11 +4,7 @@ $root: '.cards';
     &__item {
         max-width: 360px;
         display: inline-block;
-        margin: 10px;
-
-        &_type_horizontal {
-            margin: 0 15px;
-        }
+        margin: 15px;
 
         &:hover {
             cursor: pointer;
@@ -201,7 +197,7 @@ $root: '.cards';
     }
 
     &__more {
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     &__calendar {

@@ -6,7 +6,7 @@ class Ideas extends Component {
     render() {
         return(
             <div className='ideas'>
-                <div className='ideas__content'>
+                <div className='ideas__content page'>
                     <div className='ideas__title title'>
                         Waxom is realization of your ideas
                     </div>

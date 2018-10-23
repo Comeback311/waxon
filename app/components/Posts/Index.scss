@@ -1,7 +1,8 @@
 .posts {
-    padding: 80px 40px 60px 40px;
-
     &__content {
+        padding-top: 80px;
+        padding-bottom: 60px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -17,15 +18,19 @@
     }
 
     &__cards {
-        margin-top: 50px;
+        margin-top: 35px;
 
         &-arrows {
             display: flex;
             justify-content: center;
 
-            margin-top: 25px;
+            margin-top: 15px;
 
             font-size: 24px;
+        }
+
+        &-content {
+            text-align: center;
         }
 
         &-arrow {

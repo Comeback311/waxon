@@ -29,7 +29,7 @@ class Stat extends Component {
 
         return(
             <div className='stat'>
-                <div className='stat__content'>
+                <div className='stat__content page'>
                     {
                         statData.map(statItem => {
                             const { faIcon, count, name } = statItem;

@@ -39,8 +39,8 @@ class Landing extends Component {
 
     render() {
         return(
-            <div className='landing page'>
-                <div className='landing__content'>
+            <div className='landing'>
+                <div className='landing__content page'>
                     <div className='landing__title landing__title_medium'>Unique and Modern Design</div>
                     <div className='landing__title landing__title_big'>Welcome to Waxom</div>
                     <div className='landing__title landing__title_small'>Waxom is a perfect WordPress theme for your awesome personal portfolio.</div>

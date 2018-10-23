@@ -6,7 +6,7 @@ class Footer extends Component {
     render() {
         return(
             <div className='footer'>
-                <div className='footer__content'>
+                <div className='footer__content page'>
                     <div className='footer__copy'>
                         Copyright 2018 Waxom, Created by 
                         <a className='footer__author' href='https://github.com/comeback311' target='_blank' rel="noopener noreferrer">Avdeev Denis</a>

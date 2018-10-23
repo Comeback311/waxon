@@ -7,7 +7,7 @@ class Presentation extends Component {
         return(
             <div className='presentation'>
                 <div className='presentation__overlay'></div>
-                <div className='presentation__content'>
+                <div className='presentation__content page'>
                     <div className='presentation__play'>
                         <i className="fa fa-play presentation__play-icon"></i>
                     </div>

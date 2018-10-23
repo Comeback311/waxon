@@ -7,7 +7,7 @@ class Projects extends Component {
     render() {
         return(
             <div className='projects'>
-                <div className='projects__content'>
+                <div className='projects__content page'>
                     <div className='projects__title title'>
                         Our Projects
                     </div>
@@ -15,12 +15,14 @@ class Projects extends Component {
                         Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. I am text block. Click edit button to change this text.
                     </div>
                     <div className='projects__buttons'>
-                        <div className='projects__button projects__button_active'>Show All</div>
-                        <div className='projects__button'>Architecture</div>
-                        <div className='projects__button'>Illustration</div>
-                        <div className='projects__button'>Nature</div>
-                        <div className='projects__button'>Photography</div>
-                        <div className='projects__button'>Web Design</div>
+                        <div className='projects__buttons-wrapper'>
+                            <div className='projects__button projects__button_active'>Show All</div>
+                            <div className='projects__button'>Architecture</div>
+                            <div className='projects__button'>Illustration</div>
+                            <div className='projects__button'>Nature</div>
+                            <div className='projects__button'>Photography</div>
+                            <div className='projects__button'>Web Design</div>
+                        </div>
                     </div>
                     <Cards className='projects__cards'/>
                 </div>

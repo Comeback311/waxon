@@ -6,9 +6,9 @@ class PosterMobile extends Component {
     render() {
         return (
             <div className='poster-mobile'>
-                <div className='poster-mobile__content'>
+                <div className='poster-mobile__content page'>
                     <div className='poster-mobile__left'>
-                        <img src='assets/images/iphone.png' />
+                        <img className='poster-mobile__image' src='assets/images/iphone.png' />
                     </div>
                     <div className='poster-mobile__right'>
                         <div className='poster-mobile__title'>Excellent for Mobile Devices.</div>

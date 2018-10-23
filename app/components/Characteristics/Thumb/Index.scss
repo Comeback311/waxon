@@ -1,15 +1,11 @@
 .characteristics {
     &__thumb {
-        width: 285px;
-        margin: 0 20px;
+        width: calc(25% - 40px);
 
-        &:first-child {
-            margin-left: 0;
-        }
+        max-width: 275px;
+        min-width: 210px;
 
-        &:last-child {
-            margin-right: 0;
-        }
+        margin: 20px;
 
         &:hover {
             cursor: pointer;

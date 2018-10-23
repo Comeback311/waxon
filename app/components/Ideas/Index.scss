@@ -1,20 +1,20 @@
 .ideas {
     background: #fbfaf8;
-    padding: 90px 70px 0 70px;
 
     &__content {
         text-align: center;
+        padding-top: 90px;
     }
 
     &__templates {
         margin-top: 60px;
+        font-size: 0;
 
-        display: flex;
-        justify-content: center;
+        text-align: center;
         
         &-image {
             width: 100%;
-            max-width: 1140px;
+            max-width: 1170px;
         }
     }
 

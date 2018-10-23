@@ -1,16 +1,18 @@
 .poster-mobile {
-    padding: 75px 50px 0 50px;
-
     &__content {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+
+        max-width: 1170px;
+
+        margin: 0 auto;
+
+        padding-top: 75px;
     }
 
     &__left {
         font-size: 0;
-
-        margin-right: 50px;
     }
 
     &__title {
@@ -30,9 +32,18 @@
         max-width: 620px;
     }
 
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
     &__list {
-        margin-top: 30px;
-        padding-left: 80px;
+        margin: 30px auto;
+        margin-bottom: 0;
+
+        width: 75%;
+
+        padding-left: 30px;
 
         &-item {
             color: #8c8c8c;
@@ -58,6 +69,24 @@
                 top: 3px;
                 left: -26px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .poster-mobile {
+        &__content {
+            flex-wrap: wrap;
+
+            padding-bottom: 40px;
+        }
+
+        &__right {
+            margin-top: 30px;
+        }
+
+        &__title {
+            text-align: center;
         }
     }
 }

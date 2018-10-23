@@ -1,12 +1,12 @@
 .projects {
     width: 100%;
-    max-width: 1140px;
     margin: 0 auto;
 
     background: #fff;
 
     &__content {
-        padding: 70px 0;
+        padding-top: 80px;
+        padding-bottom: 80px;
         text-align: center;
     }
 
@@ -22,9 +22,18 @@
 
     &__buttons {
         margin-top: 40px;
+        overflow-y: hidden;
+        overflow-x: auto;
 
-        display: flex;
-        justify-content: center;
+        &-wrapper {
+            width: auto;
+
+            display: flex;
+            justify-content: center;
+            
+            margin: 0 auto;
+            padding-bottom: 15px;
+        }
     }
 
     &__button {
@@ -33,7 +42,13 @@
         color: rgb(140, 140, 140);
         border-radius: 2px;
         border: 1px solid rgb(235, 235, 235);
-        margin: 0 5px;
+
+        white-space: nowrap;
+
+        // margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+
         cursor: pointer;
         transition: .3s background, .3s color, .3s border-color;
 
@@ -46,7 +61,17 @@
     }
 
     &__cards {
-        margin-top: 40px;
+        margin-top: 20px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .projects {
+        &__buttons {
+            &-wrapper {
+                justify-content: initial;
+            }
+        }
     }
 }

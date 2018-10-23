@@ -3,19 +3,20 @@ $root: '.about';
 #{$root} {
     background: #191919;
 
-    padding-top: 40px;
-    padding-bottom: 50px;
-
     display: flex;
     justify-content: center;
 
     &__content {
+        padding-top: 40px;
+        padding-bottom: 50px;
+
         max-width: 1170px;
 
         width: 100%;
 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     &__description {
@@ -100,21 +101,16 @@ $root: '.about';
     }
 
     &__item {
-        width: 25%;
+        width: calc(25% - 30px);
+
+        min-width: 200px;
 
         padding: 0 15px;
-
-        &:first-child {
-            padding-left: 0;
-        }
-
-        &:last-child {
-            padding-right: 0;
-        }
+        padding-top: 10px;
     }
 
     &__item:not(:first-child) {
-        padding-top: 24px;
+        padding-top: 35px;
     }
 
     &__logo {
