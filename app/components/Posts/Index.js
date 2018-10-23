@@ -20,7 +20,6 @@ class Posts extends Component {
                 offset: true
             },
             more: true,
-            horizontal: true,
             hovered: {
                 search: true
             }
@@ -39,7 +38,6 @@ class Posts extends Component {
                 offset: true
             },
             more: true,
-            horizontal: true,
             hovered: {
                 search: true
             }
@@ -58,7 +56,6 @@ class Posts extends Component {
                 offset: true
             },
             more: true,
-            horizontal: true,
             hovered: {
                 search: true
             }
@@ -76,22 +73,23 @@ class Posts extends Component {
                         Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum notare quam littera.
                     </div>
                     <div className='posts__cards'>
-                        {
-                            postsData.map(post => {
-                                const { image, title, categories, more, date, horizontal, hovered } = post;
+                        <div className='posts__cards-content'>
+                            {
+                                postsData.map(post => {
+                                    const { image, title, categories, more, date, hovered } = post;
 
-                                return <CardsItem
-                                    key = { title.text }
-                                    image = { image }
-                                    title = { title }
-                                    categories = { categories }
-                                    date = { date }
-                                    more = { more }
-                                    horizontal = { horizontal }
-                                    hovered = { hovered }
-                                />;
-                            })
-                        }
+                                    return <CardsItem
+                                        key = { title.text }
+                                        image = { image }
+                                        title = { title }
+                                        categories = { categories }
+                                        date = { date }
+                                        more = { more }
+                                        hovered = { hovered }
+                                    />;
+                                })
+                            }
+                        </div>
                         <div className='posts__cards-arrows'>
                             <div className='posts__cards-arrow posts__cards-arrow-left'>
                                 <i className='posts__cards-arrow-icon-left fas fa-angle-left'></i>

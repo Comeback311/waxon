@@ -8,7 +8,7 @@ class PosterMobile extends Component {
             <div className='poster-mobile'>
                 <div className='poster-mobile__content'>
                     <div className='poster-mobile__left'>
-                        <img src='assets/images/iphone.png' />
+                        <img width='423px' height='616px' src='assets/images/iphone.png' />
                     </div>
                     <div className='poster-mobile__right'>
                         <div className='poster-mobile__title'>Excellent for Mobile Devices.</div>

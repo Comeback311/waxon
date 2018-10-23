@@ -17,6 +17,8 @@ $transition: .25s;
 
     transition: $transition background;
 
+    z-index: 1;
+
     &:hover {
         background: rgba(255, 255, 255, .85);
 

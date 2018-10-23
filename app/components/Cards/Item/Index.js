@@ -6,7 +6,7 @@ class CardsItem extends Component {
     }
 
     render() {
-        const { image, title, categories, likes, date, more, horizontal, hovered } = this.props;
+        const { image, title, categories, likes, date, more, hovered } = this.props;
 
         let titleClassName = 'cards__title cards__title_size_' +
             (title && title.size || 'default') +
@@ -16,10 +16,8 @@ class CardsItem extends Component {
             (categories.offset && ' cards__categories_offset' || '') +
             (hovered && hovered.bottomBlack ? ' cards__categories_hover_true': '');
 
-        const cardsItemClassName = 'cards__item' + (horizontal && ' cards__item_type_horizontal' || '');
-
         return(
-            <div className={ cardsItemClassName }>
+            <div className='cards__item'>
                 <div className='cards__top'>
                     {
                         (date && date.day && date.month) &&
